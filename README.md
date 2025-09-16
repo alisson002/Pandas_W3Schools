@@ -191,6 +191,14 @@ df = pd.read_csv('dados.csv')
 correlacao = df.corr()
 print(correlacao)
 ```
+#### Correlação perfeita:
+Podemos ver que "Duration" e "Duration" receberam o número 1.000000, o que faz sentido, cada coluna sempre tem um relacionamento perfeito consigo mesma.
+
+#### Boa correlação:
+"Duração" e "Calorias" apresentaram uma 0.922721correlação, que é uma correlação muito boa, e podemos prever que quanto mais tempo você treina, mais calorias você queima, e o contrário: se você queimou muitas calorias, provavelmente fez um treino longo.
+
+#### Correlação ruim:
+"Duração" e "Pulso máximo" apresentaram uma 0.009403correlação, que é uma correlação muito ruim, o que significa que não podemos prever o pulso máximo apenas observando a duração do treino, e vice-versa.
 
 ## 🎓 Recursos Educacionais
 
@@ -199,14 +207,3 @@ print(correlacao)
 - **Exercícios Práticos**: Cada módulo contém exemplos aplicados
 - **Quizzes Interativos**: Avaliação contínua do aprendizado
 
-## 🤝 Contribuição
-
-Este projeto é destinado ao aprendizado pessoal. Para sugestões ou correções, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## 📄 Licença
-
-Este material é baseado no conteúdo educacional do W3Schools e está disponível para uso educacional.
-
----
-
-**Desenvolvido para facilitar o aprendizado prático do Pandas através de exemplos interativos e exercícios aplicados.**
